@@ -16,13 +16,13 @@
 ^+==;++^^#%@@@@@@@@@@%#*===#%%;`'.::::::   Kernel....: Rust  (+ C / C++ / CUDA / HIP)
 ^=*=:^^^:#*;:::;#@@@+``^::^^:#*:`':::::;   Runtime...: Vulkan · TensorRT · ONNX · llama.cpp
 ^==+^^^^::^;++;;=@@@%*=;:;=*##%=::::::^:   Focus.....: Low-bit inference · GPU · Air-gapped AI
-^+=;^^^:;=*++'';%%@@@%%=``**%%%*=*=;::^^   Stack.....: LoRA · 1.58-bit BitNet · RAG · AI Agents
+^+=;^^^:;=*++'';%%@@@%%=``**%%%*=*=;::^^   Stack.....: LoRA · Ontology · RAG · AI Agents
 :+++;;;;+=*#%==%@%%%%%@@%%%%%%%==**;::^^
 +==*****==*%%%@@%#%%%@@@@@%%%%#+**+:^^^:   Repos.....: 29 public
 +++===++++*%%%@@%=**=#%%@@%%%%=;#*^:^^^^   History...: ex Nscale · AIM Sport · NXP · Corvus
 =***#*==+++*%%%=:`'`^^^^:*%%#=:^;::::^^^   Edu.......: MSc Applied Data Science · BSc Tech Inf.
 ****==+=++;^+#;^;=**#***;^*+:^`:::::^^^^   Langs.....: EN (pro) · NL (native) · FR · DE
-***=+==*=++;'``^*#+^:+*=:'`''^=*%;:^^^^^   Editor....: nvim btw
+***=+==*=++;'``^*#+^:+*=:'`''^=*%;:^^^^^   Editor....: nvim · vscode · qtcreator
 +===+==*=++=;`..'^`'````...':*##%+^::^::
 ;++;:;=*=+++**`'....'....':+###*##+::^::   Contact...: arsalan@anwari.nl
 :::^^;;=++++*=:::^``''^:;+*###**#=*#==;;   LinkedIn..: in/arsalan-anwari
@@ -73,65 +73,8 @@ and making things reproducible.
 <p>
 <img src="https://img.shields.io/badge/Vulkan-A41E22?style=flat-square&logo=vulkan&logoColor=white&labelColor=0d1117" alt="Vulkan" />
 <img src="https://img.shields.io/badge/TensorRT-76B900?style=flat-square&logo=nvidia&logoColor=white&labelColor=0d1117" alt="TensorRT" />
-<img src="https://img.shields.io/badge/ONNX-005CED?style=flat-square&logo=onnx&logoColor=white&labelColor=0d1117" alt="ONNX" />
+<img src="https://img.shields.io/badge/ONNX%20Runtime-005CED?style=flat-square&logo=onnx&logoColor=white&labelColor=0d1117" alt="ONNX Runtime" />
 <img src="https://img.shields.io/badge/ROCm%20/%20HIP-ED1C24?style=flat-square&logo=amd&logoColor=white&labelColor=0d1117" alt="ROCm / HIP" />
-<img src="https://img.shields.io/badge/OpenGL-5586A4?style=flat-square&logo=opengl&logoColor=white&labelColor=0d1117" alt="OpenGL" />
-<img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white&labelColor=0d1117" alt="OpenCV" />
 <img src="https://img.shields.io/badge/llama.cpp-444444?style=flat-square&logoColor=white&labelColor=0d1117" alt="llama.cpp" />
 </p>
 
-**AI / ML**
-<p>
-<img src="https://img.shields.io/badge/LoRA-7C3AED?style=flat-square&labelColor=0d1117" alt="LoRA" />
-<img src="https://img.shields.io/badge/1.58--bit%20BitNet-7C3AED?style=flat-square&labelColor=0d1117" alt="1.58-bit BitNet" />
-<img src="https://img.shields.io/badge/RAG-7C3AED?style=flat-square&labelColor=0d1117" alt="RAG" />
-<img src="https://img.shields.io/badge/AI%20Agents-7C3AED?style=flat-square&labelColor=0d1117" alt="AI Agents" />
-<img src="https://img.shields.io/badge/MCP-7C3AED?style=flat-square&labelColor=0d1117" alt="MCP" />
-</p>
-
-**Tooling**
-<p>
-<img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black&labelColor=0d1117" alt="Linux" />
-<img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white&labelColor=0d1117" alt="Git" />
-<img src="https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white&labelColor=0d1117" alt="Jupyter" />
-<img src="https://img.shields.io/badge/KiCad-314CB0?style=flat-square&logo=kicad&logoColor=white&labelColor=0d1117" alt="KiCad" />
-<img src="https://img.shields.io/badge/Notion-000000?style=flat-square&logo=notion&logoColor=white&labelColor=0d1117" alt="Notion" />
-<img src="https://img.shields.io/badge/Asana-F06A6A?style=flat-square&logo=asana&logoColor=white&labelColor=0d1117" alt="Asana" />
-</p>
-
-## `$ git log --stat`
-
-<div align="center">
-
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=arsalan-anwari&show_icons=true&hide_border=true&count_private=true&include_all_commits=true&theme=tokyonight" alt="stats" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=arsalan-anwari&layout=compact&hide_border=true&langs_count=8&theme=tokyonight" alt="top languages" />
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=arsalan-anwari&hide_border=true&theme=tokyonight" alt="streak" />
-
-</div>
-
-## `$ cat ~/projects/*.md`
-
-| Project | What it is |
-| --- | --- |
-| [**openinfer**](https://github.com/arsalan-anwari/openinfer) | Open-source inference library: define inference loops as lazy compute graphs, synthesised across heterogeneous compute backends. |
-| [**2009scape-wiki-api**](https://github.com/arsalan-anwari/2009scape-wiki-api) | Python FastAPI + MCP server that turns 2009scape game data into a clean, searchable knowledge base, for a wiki front-end or AI agents like Claude. |
-| [**zer**](https://github.com/ZAL-Analytics/zer) | Rust library for probabilistic entity resolution (Fellegi–Sunter) with optional CUDA / Vulkan GPU acceleration and a BERT neural judge. Fully local, per-field explainable, on crates.io. |
-| [**zlicenser**](https://github.com/ZAL-Analytics/zlicenser) | Hardware-bound, air-gapped software licensing & leak tracing in Rust, runs protected `.zlb` binaries in-memory with no kernel-level intrusion. |
-
-> 29 public repositories in total — [browse them all »](https://github.com/arsalan-anwari?tab=repositories)
-
-## `$ cat ~/publications.bib`
-
-- **LoRA Fine-Tuning and Lossless Ternary Inference for BitNet LLMs on Heterogeneous GPUs**
-- **Stability and reproducibility evaluation of different windspeed spatial interpolation models to assist pesticide dispersion estimates**
-
-## `$ ./connect.sh`
-
-<div align="center">
-
-**arsalan@anwari.nl**  ·  [LinkedIn](https://www.linkedin.com/in/arsalan-anwari/) 
-
-<sub>MSc Applied Data Science, Utrecht University · BSc Technical Informatics, HU Utrecht</sub>
-
-</div>
