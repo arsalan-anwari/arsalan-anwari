@@ -19,10 +19,10 @@
 ^+=;^^^:;=*++'';%%@@@%%=``**%%%*=*=;::^^   Stack.....: LoRA · Ontology · RAG · AI Agents
 :+++;;;;+=*#%==%@%%%%%@@%%%%%%%==**;::^^
 +==*****==*%%%@@%#%%%@@@@@%%%%#+**+:^^^:   Repos.....: 29 public
-+++===++++*%%%@@%=**=#%%@@%%%%=;#*^:^^^^   History...: ex Nscale · AIM Sport · NXP · Corvus
-=***#*==+++*%%%=:`'`^^^^:*%%#=:^;::::^^^   Edu.......: MSc Applied Data Science · BSc Tech Inf.
++++===++++*%%%@@%=**=#%%@@%%%%=;#*^:^^^^   History...: ex Tether · Nscale · AIM Sport · AMD · NXP
+=***#*==+++*%%%=:`'`^^^^:*%%#=:^;::::^^^   Edu.......: MSc Data Science · BSc Tech Informatics
 ****==+=++;^+#;^;=**#***;^*+:^`:::::^^^^   Langs.....: EN (pro) · NL (native) · FR · DE
-***=+==*=++;'``^*#+^:+*=:'`''^=*%;:^^^^^   Editor....: nvim · vscode · qtcreator
+***=+==*=++;'``^*#+^:+*=:'`''^=*%;:^^^^^   Editor....: nvim · vscode · visual studio
 +===+==*=++=;`..'^`'````...':*##%+^::^::
 ;++;:;=*=+++**`'....'....':+###*##+::^::   Contact...: arsalan@anwari.nl
 :::^^;;=++++*=:::^``''^:;+*###**#=*#==;;   LinkedIn..: in/arsalan-anwari
