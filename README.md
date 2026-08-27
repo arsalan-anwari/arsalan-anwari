@@ -46,17 +46,15 @@
 
 ## `$ whoami`
 
-AI Performance Engineer specialising in **inference and raw throughput**, squeezing
-models onto whatever silicon is in front of me, from GB200 racks down to low-power
-embedded boards. Lately that means **low-bit / ternary (1.58-bit BitNet) inference**,
-**LoRA fine-tuning pipelines**, and **air-gapped AI systems** in Rust with GPU
-acceleration at [ZAL Analytics](https://www.zal-analytics.ch). I care about the
-parts most people skip: profiling, kernels, portability across heterogeneous backends,
-and making things reproducible.
+AI Performance Engineer specialising in **low power and low bit inference**, squeezing
+models onto whatever silicon is in front of me optimized for latency or power usage, 
+from GB200 racks down to low-power embedded boards.
 
-- Building open, portable inference. See [`openinfer`](https://github.com/arsalan-anwari/openinfer)
+I care about the parts most people skip: profiling, kernels, portability across 
+heterogeneous backends, and making things reproducible.
 - Comfortable across the stack: **Rust · C · C++ · CUDA · HIP/ROCm · Vulkan · Python**
 - Open for **short-term volunteer work in the EU/EEA**
+- Moving to Japan in 2027/2028 for work. 
 
 ## `$ ls ~/stack`
 
