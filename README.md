@@ -18,7 +18,7 @@
 ^==+^^^^::^;++;;=@@@%*=;:;=*##%=::::::^:   Focus.....: Low-bit inference · GPU · Air-gapped AI
 ^+=;^^^:;=*++'';%%@@@%%=``**%%%*=*=;::^^   Stack.....: LoRA · Ontology · RAG · AI Agents
 :+++;;;;+=*#%==%@%%%%%@@%%%%%%%==**;::^^
-+==*****==*%%%@@%#%%%@@@@@%%%%#+**+:^^^:   Repos.....: 34 public (1k+ downloads)
++==*****==*%%%@@%#%%%@@@@@%%%%#+**+:^^^:   Repos.....: 36 public (100+ stars, 1k+ downloads)
 +++===++++*%%%@@%=**=#%%@@%%%%=;#*^:^^^^   History...: ex Tether · Nscale · AIM Sport · AMD · NXP
 =***#*==+++*%%%=:`'`^^^^:*%%#=:^;::::^^^   Edu.......: MSc Data Science · BSc Tech Informatics
 ****==+=++;^+#;^;=**#***;^*+:^`:::::^^^^   Langs.....: EN (pro) · NL (native) · FR · DE
