@@ -46,15 +46,15 @@
 
 ## `$ whoami`
 
-AI Performance Engineer specialising in **low power and low bit inference**, squeezing
-models onto whatever silicon is in front of me optimized for latency or power usage, 
-from GB200 racks down to low-power embedded boards.
+AI Engineer with a background in **low power and low bit inference**, squeezing models onto whatever silicon is in front of me optimized for latency or power usage, from GB200 racks down to low-power embedded boards. Also some who builds the layer between raw data and AI that reasons over it. Entity resolution, knowledge graphs, RAG and MCP tooling, plus the pipelines, CI/CD and infrastructure to run them in production. Comfortable sitting with domain experts and turning tribal knowledge into explicit, testable definitions.
 
-I care about the parts most people skip: profiling, kernels, portability across 
-heterogeneous backends, and making things reproducible.
+Unlike other AI engineers I care about the parts most people skip: profiling, kernels, portability across heterogeneous back-ends, and making things reproducible.
 - Comfortable across the stack: **Rust · C · C++ · CUDA · HIP/ROCm · Vulkan · Python**
-- Open for **short-term volunteer work in the EU/EEA**
-- Moving to Japan in 2027/2028 for work. 
+- Moving to Japan in 2027/2028 for work.
+
+Dutch citizen, 5+ years working across NL, CH, FR, BE and NO. Relocating to Japan long term.
+
+Taking JLPT N5 exam in December 2026, N4 in July 2027. Aiming for N2 by 2028. Also assisting with building open source eLearning applications for JLPT training.
 
 ## `$ ls ~/stack`
 
