@@ -13,12 +13,12 @@
 :;=*+===+`';=*##%%@@@@@%%%#=:.  `:::;;::   Location..: Utrecht Area, Netherlands
 ^;==;;++`:%@%%@@@@@@@@@@@%%%%*'  ^;;:::;   Uptime....: 5+ years shipping AI systems
 `+==;++:'*%%%%@@@@@@@@@@@@@%%%:. ';:::::
-^+==;++^^#%@@@@@@@@@@%#*===#%%;`'.::::::   Kernel....: Rust  (+ C / C++ / CUDA / HIP)
+^+==;++^^#%@@@@@@@@@@%#*===#%%;`'.::::::   Kernel....: Rust  (C / C++ / CUDA / HIP)
 ^=*=:^^^:#*;:::;#@@@+``^::^^:#*:`':::::;   Runtime...: Vulkan · TensorRT · ONNX · llama.cpp
 ^==+^^^^::^;++;;=@@@%*=;:;=*##%=::::::^:   Focus.....: Low-bit inference · GPU · Air-gapped AI
 ^+=;^^^:;=*++'';%%@@@%%=``**%%%*=*=;::^^   Stack.....: LoRA · Ontology · RAG · AI Agents
 :+++;;;;+=*#%==%@%%%%%@@%%%%%%%==**;::^^
-+==*****==*%%%@@%#%%%@@@@@%%%%#+**+:^^^:   Repos.....: 34 public (100+ stars, 4k+ downloads)
++==*****==*%%%@@%#%%%@@@@@%%%%#+**+:^^^:   Repos.....: 34 public (130+ stars, 4k+ downloads)
 +++===++++*%%%@@%=**=#%%@@%%%%=;#*^:^^^^   History...: ex Tether · Nscale · AIM Sport · AMD · NXP
 =***#*==+++*%%%=:`'`^^^^:*%%#=:^;::::^^^   Edu.......: MSc Data Science · BSc Tech Informatics
 ****==+=++;^+#;^;=**#***;^*+:^`:::::^^^^   Langs.....: EN (pro) · NL (native) · FR · DE
