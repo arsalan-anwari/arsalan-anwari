@@ -1,10 +1,3 @@
-<!--
-  GitHub profile README for @arsalan-anwari
-  The block below is a neofetch-style banner: an ASCII portrait rendered from
-  the profile picture, aligned next to a "system info" panel. Keep it inside the
-  fenced ```` ```text ```` code block so the monospacing (and the alignment) is preserved.
--->
-
 ```text
 +:+===**++;;:^^^:=***===+;`^:;;:::;::::^   arsalan@github
 =:===##*+;;;:^^^:;:^`````^`^;;;:::;::::^   --------------------------------
@@ -50,7 +43,7 @@ AI Engineer with a background in **low power and low bit inference**, squeezing 
 
 Unlike other AI engineers I care about the parts most people skip: profiling, kernels, portability across heterogeneous back-ends, and making things reproducible.
 - Comfortable across the stack: **Rust · C · C++ · CUDA · HIP/ROCm · Vulkan · Python**
-- Moving to Japan in 2027/2028 for work.
+- Moving to Japan end 2028 for work.
 
 Dutch citizen, 5+ years working across NL, CH, FR, BE and NO. Relocating to Japan long term.
 
