@@ -43,11 +43,8 @@ AI Engineer with a background in **low power and low bit inference**, squeezing 
 
 Unlike other AI engineers I care about the parts most people skip: profiling, kernels, portability across heterogeneous back-ends, and making things reproducible.
 - Comfortable across the stack: **Rust · C · C++ · CUDA · HIP/ROCm · Vulkan · Python**
-- Moving to Japan end 2028 for work.
 
-Dutch citizen, 5+ years working across NL, CH, FR, BE and NO. Relocating to Japan long term.
-
-Taking JLPT N5 exam in December 2026, N4 in July 2027. Aiming for N2 by end of 2028. Also assisting with building open source eLearning applications for JLPT training.
+Dutch citizen, 5+ years working across NL, CH, FR, BE and NO.
 
 ## `$ ls ~/stack`
 
