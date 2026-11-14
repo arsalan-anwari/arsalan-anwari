@@ -59,6 +59,9 @@ SKILLS = [  # (kanji, title, [(label, simple-icons logo or "", hex colour)])
         ("Git", "git", "F05032"), ("CI/CD", "githubactions", "2088FF"), ("GitLab CI", "gitlab", "FC6D26")]),
 ]
 
+LINKEDIN_TAGS = ["Rust", "C++", "CUDA", "HIP / ROCm", "PTX / SASS", "vLLM", "NVIDIA Triton", "TensorRT-LLM",
+                 "llm-d", "Kubernetes", "Docker", "RAG", "MCP", "AI Agents", "Knowledge Graphs", "Quantization", "Kernel Tuning", "Profiling"]  # stack tags on the LinkedIn banner
+
 EXTRA_DOWNLOADS = 0  # downloads from sources not tracked automatically (PyPI, Docker, ...)
 STATS_FALLBACK = {"stars": 141, "repos": 50, "downloads": 25246, "crates": 54, "followers": 8}  # used if the APIs are unreachable
 
@@ -638,10 +641,20 @@ def header(linkedin=False):
         f'<text x="558" y="87" text-anchor="middle" font-family="{SERIF}" font-size="24" font-weight="700" fill="#fbe9e2">安</text></g>',
         f'<rect x="56" y="216" width="528" height="32" rx="6" fill="{INK}" opacity=".9"/>',
     ]
-    if linkedin:  # no typing tagline in a still; card kept top-left, clear of the profile photo
+    if linkedin:  # no typing tagline in a still; stack tags instead; card right of the profile photo
         text = text[:7]  # card, kana, name, brush, role, seal
-        text[:2] = [t.replace('height="226"', 'height="180"') for t in text[:2]]
-        text = [f'<g transform="translate(16,-14) scale(.9)">{"".join(text)}</g>']
+        text[:2] = [t.replace('height="226"', 'height="288"') for t in text[:2]]
+        colour = {l: c for _, _, items in SKILLS for l, _, c in items}
+        x, y = 64, 218
+        for tag in LINKEDIN_TAGS:
+            w = len(tag) * 7.1 + 18  # ponytail: char-width estimate, fine for these short labels
+            if x + w > 584:
+                x, y = 64, y + 30
+            text.append(f'<rect x="{x}" y="{y}" width="{w:.0f}" height="23" rx="4" fill="#{colour.get(tag, "55606B")}"/>'
+                        f'<text x="{x + w / 2:.0f}" y="{y + 16}" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" '
+                        f'font-size="12.5" font-weight="700" fill="#fff">{escape(tag)}</text>')
+            x += w + 7
+        text = [f'<g transform="translate(600,34) scale(.9)">{"".join(text)}</g>']
     for i, line in enumerate(TAGLINES if not linkedin else []):
         s0 = i * 5.0 / T
         k = f"0;{s0:.4f};{s0 + 1.8/T:.4f};{s0 + 4.3/T:.4f};{s0 + 4.8/T:.4f};1"
