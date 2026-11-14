@@ -4,7 +4,6 @@
 <img src="./assets/header.svg" alt="ARSALAN ANWARI — AI Performance Engineer  ·  ZAL Analytics" width="100%" />
 
 <a href="https://www.linkedin.com/in/arsalan-anwari/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-<a href="https://www.zal-analytics.ch"><img src="https://img.shields.io/badge/ZAL%20Analytics-C0392B?style=for-the-badge&logo=googlechrome&logoColor=white" alt="ZAL Analytics" /></a>
 <a href="mailto:arsalan@anwari.nl"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
 
 <a href="https://github.com/ZAL-Analytics"><img src="https://img.shields.io/badge/GitHub%20%C2%B7%20ZAL--Analytics-24292F?style=for-the-badge&logo=github&logoColor=white" alt="GitHub · ZAL-Analytics" /></a>
@@ -39,18 +38,23 @@ I care about the parts most people skip: **profiling, kernels, portability acros
 <img src="https://img.shields.io/badge/CUDA-76B900?style=flat-square&logo=nvidia&logoColor=white" alt="CUDA" />
 <img src="https://img.shields.io/badge/HIP%20%2F%20ROCm-ED1C24?style=flat-square&logo=amd&logoColor=white" alt="HIP / ROCm" />
 <img src="https://img.shields.io/badge/GLSL%20%2F%20SPIR--V-A41E22?style=flat-square&logo=vulkan&logoColor=white" alt="GLSL / SPIR-V" />
-<img src="https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white" alt="Bash" />
+<img src="https://img.shields.io/badge/x86%20Assembly-0071C5?style=flat-square" alt="x86 Assembly" />
+<img src="https://img.shields.io/badge/ARM%20Assembly-0091BD?style=flat-square&logo=arm&logoColor=white" alt="ARM Assembly" />
+<img src="https://img.shields.io/badge/PTX%20%2F%20SASS-76B900?style=flat-square&logo=nvidia&logoColor=white" alt="PTX / SASS" />
+<img src="https://img.shields.io/badge/AMDGPU%20ISA%20%28GCN%20%2F%20RDNA%29-ED1C24?style=flat-square&logo=amd&logoColor=white" alt="AMDGPU ISA (GCN / RDNA)" />
 <br/><br/>
 </td>
 <td width="50%" valign="top" align="center">
-<h4>推論 &nbsp;·&nbsp; GPU · Inference · Low-bit</h4>
-<img src="https://img.shields.io/badge/Vulkan%20Compute-A41E22?style=flat-square&logo=vulkan&logoColor=white" alt="Vulkan Compute" />
+<h4>推論 &nbsp;·&nbsp; GPU · Inference</h4>
+<img src="https://img.shields.io/badge/vLLM-30A2FF?style=flat-square" alt="vLLM" />
+<img src="https://img.shields.io/badge/NVIDIA%20Triton-76B900?style=flat-square&logo=nvidia&logoColor=white" alt="NVIDIA Triton" />
+<img src="https://img.shields.io/badge/SGLang-6D4C41?style=flat-square" alt="SGLang" />
 <img src="https://img.shields.io/badge/TensorRT-76B900?style=flat-square&logo=nvidia&logoColor=white" alt="TensorRT" />
-<img src="https://img.shields.io/badge/ONNX-005CED?style=flat-square&logo=onnx&logoColor=white" alt="ONNX" />
+<img src="https://img.shields.io/badge/TensorRT--LLM-76B900?style=flat-square&logo=nvidia&logoColor=white" alt="TensorRT-LLM" />
+<img src="https://img.shields.io/badge/Vulkan%20Compute-A41E22?style=flat-square&logo=vulkan&logoColor=white" alt="Vulkan Compute" />
 <img src="https://img.shields.io/badge/ONNX%20Runtime-005CED?style=flat-square&logo=onnx&logoColor=white" alt="ONNX Runtime" />
 <img src="https://img.shields.io/badge/llama.cpp-444444?style=flat-square" alt="llama.cpp" />
 <img src="https://img.shields.io/badge/Quantization-B8860B?style=flat-square" alt="Quantization" />
-<img src="https://img.shields.io/badge/1.58--bit%20BitNet-7C3AED?style=flat-square" alt="1.58-bit BitNet" />
 <img src="https://img.shields.io/badge/Kernel%20Tuning-C0392B?style=flat-square" alt="Kernel Tuning" />
 <img src="https://img.shields.io/badge/Profiling-8E44AD?style=flat-square" alt="Profiling" />
 <img src="https://img.shields.io/badge/Embedded%20%2F%20Edge-2E7D6B?style=flat-square" alt="Embedded / Edge" />
@@ -68,26 +72,23 @@ I care about the parts most people skip: **profiling, kernels, portability acros
 <img src="https://img.shields.io/badge/AI%20Agents-7C3AED?style=flat-square" alt="AI Agents" />
 <img src="https://img.shields.io/badge/Knowledge%20Graphs-2E7D6B?style=flat-square" alt="Knowledge Graphs" />
 <img src="https://img.shields.io/badge/Entity%20Resolution-B8860B?style=flat-square" alt="Entity Resolution" />
-<img src="https://img.shields.io/badge/Fellegi%E2%80%93Sunter-6D4C41?style=flat-square" alt="Fellegi–Sunter" />
-<img src="https://img.shields.io/badge/BERT-F4B400?style=flat-square" alt="BERT" />
-<img src="https://img.shields.io/badge/Ontology-8D6E63?style=flat-square" alt="Ontology" />
-<img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI" />
+<img src="https://img.shields.io/badge/AI%20Governance-37474F?style=flat-square" alt="AI Governance" />
+<img src="https://img.shields.io/badge/PII%20Protection-6D4C41?style=flat-square" alt="PII Protection" />
+<img src="https://img.shields.io/badge/AI%20Security-C0392B?style=flat-square" alt="AI Security" />
+<img src="https://img.shields.io/badge/Guardrails%20%2F%20Evals-8E44AD?style=flat-square" alt="Guardrails / Evals" />
 <br/><br/>
 </td>
 <td width="50%" valign="top" align="center">
 <h4>基盤 &nbsp;·&nbsp; Infra · Tools</h4>
 <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=white" alt="Linux" />
+<img src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white" alt="Kubernetes" />
+<img src="https://img.shields.io/badge/llm--d-EE0000?style=flat-square" alt="llm-d" />
+<img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
+<img src="https://img.shields.io/badge/containerd-575757?style=flat-square&logo=containerd&logoColor=white" alt="containerd" />
+<img src="https://img.shields.io/badge/Helm-0F1689?style=flat-square&logo=helm&logoColor=white" alt="Helm" />
 <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" alt="Git" />
 <img src="https://img.shields.io/badge/CI%2FCD-2088FF?style=flat-square&logo=githubactions&logoColor=white" alt="CI/CD" />
-<img src="https://img.shields.io/badge/Air--gapped%20Deploy-37474F?style=flat-square" alt="Air-gapped Deploy" />
-<img src="https://img.shields.io/badge/crates.io-E6B04A?style=flat-square&logo=rust&logoColor=white" alt="crates.io" />
-<img src="https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white" alt="Jupyter" />
-<img src="https://img.shields.io/badge/KiCad-314CB0?style=flat-square&logo=kicad&logoColor=white" alt="KiCad" />
-<img src="https://img.shields.io/badge/Neovim-57A143?style=flat-square&logo=neovim&logoColor=white" alt="Neovim" />
-<img src="https://img.shields.io/badge/VS%20Code-007ACC?style=flat-square" alt="VS Code" />
-<img src="https://img.shields.io/badge/Zed-084CCF?style=flat-square&logo=zedindustries&logoColor=white" alt="Zed" />
-<img src="https://img.shields.io/badge/Notion-000000?style=flat-square&logo=notion&logoColor=white" alt="Notion" />
-<img src="https://img.shields.io/badge/Asana-F06A6A?style=flat-square&logo=asana&logoColor=white" alt="Asana" />
+<img src="https://img.shields.io/badge/GitLab%20CI-FC6D26?style=flat-square&logo=gitlab&logoColor=white" alt="GitLab CI" />
 <br/><br/>
 </td>
 </tr>
@@ -95,7 +96,7 @@ I care about the parts most people skip: **profiling, kernels, portability acros
 
 <img src="./assets/sec-journey.svg" alt="Journey" width="100%" />
 
-<img src="./assets/journey.svg" alt="Career: NXP → AMD → AIM Sport → Nscale → Tether → ZAL Analytics" width="100%" />
+<img src="./assets/journey.svg" alt="Career: NXP → Lucidy → AIM Sport → Nscale → Tether → ZAL Analytics" width="100%" />
 
 <img src="./assets/sec-stats.svg" alt="Stats" width="100%" />
 

@@ -29,7 +29,6 @@ TAGLINES = [  # typed out one after another in the header
 
 SOCIALS = [  # (label, logo, colour, url)
     ("LinkedIn", "linkedin", "0A66C2", "https://www.linkedin.com/in/arsalan-anwari/"),
-    ("ZAL Analytics", "googlechrome", "C0392B", "https://www.zal-analytics.ch"),
     ("Email", "gmail", "D14836", "mailto:arsalan@anwari.nl"),
 ]
 ORGS = [  # (label, url)
@@ -41,29 +40,30 @@ SKILLS = [  # (kanji, title, [(label, simple-icons logo or "", hex colour)])
     ("言語", "Languages", [
         ("Rust", "rust", "CE422B"), ("C", "c", "A8B9CC"), ("C++", "cplusplus", "00599C"),
         ("Python", "python", "3776AB"), ("CUDA", "nvidia", "76B900"), ("HIP / ROCm", "amd", "ED1C24"),
-        ("GLSL / SPIR-V", "vulkan", "A41E22"), ("Bash", "gnubash", "4EAA25")]),
-    ("推論", "GPU · Inference · Low-bit", [
-        ("Vulkan Compute", "vulkan", "A41E22"), ("TensorRT", "nvidia", "76B900"), ("ONNX", "onnx", "005CED"),
+        ("GLSL / SPIR-V", "vulkan", "A41E22"), ("x86 Assembly", "", "0071C5"), ("ARM Assembly", "arm", "0091BD"),
+        ("PTX / SASS", "nvidia", "76B900"), ("AMDGPU ISA (GCN / RDNA)", "amd", "ED1C24")]),
+    ("推論", "GPU · Inference", [
+        ("vLLM", "", "30A2FF"), ("NVIDIA Triton", "nvidia", "76B900"), ("SGLang", "", "6D4C41"),
+        ("TensorRT", "nvidia", "76B900"), ("TensorRT-LLM", "nvidia", "76B900"), ("Vulkan Compute", "vulkan", "A41E22"),
         ("ONNX Runtime", "onnx", "005CED"), ("llama.cpp", "", "444444"), ("Quantization", "", "B8860B"),
-        ("1.58-bit BitNet", "", "7C3AED"), ("Kernel Tuning", "", "C0392B"), ("Profiling", "", "8E44AD"),
-        ("Embedded / Edge", "", "2E7D6B"), ("OpenCV", "opencv", "5C3EE8"), ("OpenGL", "opengl", "5586A4")]),
+        ("Kernel Tuning", "", "C0392B"), ("Profiling", "", "8E44AD"), ("Embedded / Edge", "", "2E7D6B"),
+        ("OpenCV", "opencv", "5C3EE8"), ("OpenGL", "opengl", "5586A4")]),
     ("知識", "AI · Knowledge", [
         ("LoRA", "", "7C3AED"), ("RAG", "", "C0392B"), ("MCP", "modelcontextprotocol", "222222"),
         ("AI Agents", "", "7C3AED"), ("Knowledge Graphs", "", "2E7D6B"), ("Entity Resolution", "", "B8860B"),
-        ("Fellegi–Sunter", "", "6D4C41"), ("BERT", "", "F4B400"), ("Ontology", "", "8D6E63"),
-        ("FastAPI", "fastapi", "009688")]),
+        ("AI Governance", "", "37474F"), ("PII Protection", "", "6D4C41"), ("AI Security", "", "C0392B"),
+        ("Guardrails / Evals", "", "8E44AD")]),
     ("基盤", "Infra · Tools", [
-        ("Linux", "linux", "FCC624"), ("Git", "git", "F05032"), ("CI/CD", "githubactions", "2088FF"),
-        ("Air-gapped Deploy", "", "37474F"), ("crates.io", "rust", "E6B04A"), ("Jupyter", "jupyter", "F37626"),
-        ("KiCad", "kicad", "314CB0"), ("Neovim", "neovim", "57A143"), ("VS Code", "", "007ACC"),
-        ("Zed", "zedindustries", "084CCF"), ("Notion", "notion", "000000"), ("Asana", "asana", "F06A6A")]),
+        ("Linux", "linux", "FCC624"), ("Kubernetes", "kubernetes", "326CE5"), ("llm-d", "", "EE0000"),
+        ("Docker", "docker", "2496ED"), ("containerd", "containerd", "575757"), ("Helm", "helm", "0F1689"),
+        ("Git", "git", "F05032"), ("CI/CD", "githubactions", "2088FF"), ("GitLab CI", "gitlab", "FC6D26")]),
 ]
 
 EXTRA_DOWNLOADS = 0  # downloads from sources not tracked automatically (PyPI, Docker, ...)
 STATS_FALLBACK = {"stars": 141, "repos": 50, "downloads": 25246, "crates": 54, "followers": 8}  # used if the APIs are unreachable
 
 # oldest → newest (current employer last)
-JOURNEY = [("NXP", "壱"), ("AMD", "弐"), ("AIM Sport", "参"), ("Nscale", "肆"), ("Tether", "伍"), ("ZAL Analytics", "今")]
+JOURNEY = [("NXP", "壱"), ("Lucidy", "弐"), ("AIM Sport", "参"), ("Nscale", "肆"), ("Tether", "伍"), ("ZAL Analytics", "今")]
 
 # palette (daylight)
 INK, INK2 = "#22303c", "#55606b"
@@ -590,7 +590,8 @@ def diorama():
 
 
 # ─────────────────────────── header ────────────────────────────
-def header():
+def header(linkedin=False):
+    """README header (1200x500), or with linkedin=True a 1584x396 LinkedIn banner re-composed from the same parts."""
     W, H = 1200, 500
     b = [f'<rect width="{W}" height="{H}" fill="url(#sky)"/>',
          f'<circle class="sun" cx="1040" cy="92" r="130" fill="url(#sun)"/><circle cx="1040" cy="92" r="30" fill="#fff8de"/>']
@@ -611,7 +612,12 @@ def header():
     b.append("".join(f'<g class="cloud" style="animation-duration:{d}s;animation-delay:-{d * i / 6:.0f}s">{cloud(0, y, s, .85)}</g>'
                      for i, (y, s, d) in enumerate([(455, 1.1, 150), (485, .9, 130), (440, .8, 170), (478, 1.2, 190), (465, .7, 120), (492, 1.0, 160)])))
     scene, sdefs = diorama()
-    b.append(scene)
+    if linkedin:  # sky/mountains scaled to full width and cropped, village shrunk to fit on the right
+        b = [f'<g transform="translate(0,-135) scale(1.32)">{"".join(b)}</g>',
+             f'<g transform="translate(660,-12) scale(.8)">{scene}</g>']
+        W, H = 1584, 396
+    else:
+        b.append(scene)
     pt, pcss = petals(30, W, H)
     b.append(pt)
 
@@ -632,7 +638,11 @@ def header():
         f'<text x="558" y="87" text-anchor="middle" font-family="{SERIF}" font-size="24" font-weight="700" fill="#fbe9e2">安</text></g>',
         f'<rect x="56" y="216" width="528" height="32" rx="6" fill="{INK}" opacity=".9"/>',
     ]
-    for i, line in enumerate(TAGLINES):
+    if linkedin:  # no typing tagline in a still; card kept top-left, clear of the profile photo
+        text = text[:7]  # card, kana, name, brush, role, seal
+        text[:2] = [t.replace('height="226"', 'height="180"') for t in text[:2]]
+        text = [f'<g transform="translate(16,-14) scale(.9)">{"".join(text)}</g>']
+    for i, line in enumerate(TAGLINES if not linkedin else []):
         s0 = i * 5.0 / T
         k = f"0;{s0:.4f};{s0 + 1.8/T:.4f};{s0 + 4.3/T:.4f};{s0 + 4.8/T:.4f};1"
         wfull = len(line) * cw + 2
@@ -657,10 +667,10 @@ def banner(kanji, title, cmd):
     blossoms = "".join(f'<g class="bl" style="animation-delay:-{rr.uniform(0,4):.1f}s">'
                        + "".join(f'<circle cx="{bx + 5*math.cos(a):.1f}" cy="{by + 5*math.sin(a):.1f}" r="4" fill="#f6c1cc"/>' for a in [j*1.2566 for j in range(5)])
                        + f'<circle cx="{bx}" cy="{by}" r="2" fill="#e0607e"/></g>'
-                       for bx, by in [(1080, 30), (1112, 46), (1140, 26), (1166, 50), (1052, 52)])
+                       for bx, by in [(1050, 28), (1088, 54), (1126, 20), (1141, 44), (1170, 52)])  # on the branch or at twig tips
     body = (f'<rect x="1" y="1" width="{W - 2}" height="{H - 2}" rx="12" fill="url(#washi)" stroke="#e4d5b5"/>'
             f'<path d="M1020,18 C1070,40 1120,30 1190,60" stroke="#5b4636" stroke-width="3" fill="none" stroke-linecap="round"/>'
-            f'<path d="M1090,34 L1110,48 M1138,30 L1150,20" stroke="#5b4636" stroke-width="2" stroke-linecap="round"/>{blossoms}'
+            f'<path d="M1073,32 L1088,54 M1114,39 L1126,20" stroke="#5b4636" stroke-width="2" stroke-linecap="round"/>{blossoms}'
             f'<g class="seal"><rect x="24" y="18" width="48" height="48" rx="6" fill="{VERMILION}"/>'
             f'<text x="48" y="{50 if len(kanji) == 1 else 49}" text-anchor="middle" font-family="{SERIF}" font-size="{26 if len(kanji) == 1 else 19}" font-weight="700" fill="#fbe9e2">{kanji}</text></g>'
             f'<text x="92" y="50" font-family="{SERIF}" font-size="28" font-weight="700" fill="{INK}">{escape(title)}</text>'
@@ -897,6 +907,7 @@ if __name__ == "__main__":
         "sec-stats": banner("統", "GitHub stats", "$ git stats"),
     }
     files["stats"] = stats_card(fetch_stats())
+    files["linkedin-banner"] = header(linkedin=True)  # last: keeps the shared rng sequence of the other assets unchanged
     for old in ASSETS.glob("*.svg"):
         old.unlink()
     for name, content in files.items():
